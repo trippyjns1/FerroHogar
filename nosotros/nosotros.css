@@ -1,0 +1,452 @@
+/* ============================================================
+   nosotros.css — FerroHogar | Sección Nosotros
+   Colores: Rojo #D32F2F | Negro #1a1a1a | Blanco #ffffff
+   ============================================================ */
+
+/* ---------- RESET & BASE ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-red:      #D32F2F;
+  --color-red-dark: #b71c1c;
+  --color-black:    #1a1a1a;
+  --color-white:    #ffffff;
+  --color-gray-bg:  #f5f5f5;
+  --color-gray-text:#666666;
+  --color-gray-border: #e0e0e0;
+
+  --font-main: 'Segoe UI', Arial, sans-serif;
+
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-full: 50%;
+
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  --transition: 0.3s ease;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-black);
+  background: var(--color-white);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   HERO — Quiénes somos
+   ============================================================ */
+.hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 80px 60px;
+  overflow: hidden;
+}
+
+/* Imagen de fondo con overlay oscuro */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url('imagenes/ban_nos.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.35);
+  z-index: 0;
+}
+
+/* Contenido encima del overlay */
+.hero__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero__text {
+  flex: 1;
+}
+
+.hero__label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 14px;
+}
+
+.hero__title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-white);
+  margin-bottom: 18px;
+}
+
+.hero__title span {
+  color: var(--color-red);
+}
+
+.hero__desc {
+  font-size: 15px;
+  color: #cccccc;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+/* Badge contador años */
+.hero__badge {
+  flex-shrink: 0;
+  min-width: 160px;
+  background-color: var(--color-red);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__badge-num {
+  font-size: 58px;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.hero__badge-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.4;
+}
+
+/* ============================================================
+   CONTADORES
+   ============================================================ */
+.counters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--color-red);
+}
+
+.counters__item {
+  padding: 30px 20px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.counters__item:last-child {
+  border-right: none;
+}
+
+.counters__num {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.counters__label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ============================================================
+   MISIÓN Y VISIÓN
+   ============================================================ */
+.mv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  padding: 64px 60px;
+  background-color: var(--color-gray-bg);
+}
+
+.mv__card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.mv__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.mv__icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-red);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: var(--color-white);
+}
+
+.mv__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 12px;
+}
+
+.mv__text {
+  font-size: 14px;
+  color: var(--color-gray-text);
+  line-height: 1.8;
+}
+
+/* ============================================================
+   VALORES
+   ============================================================ */
+.valores {
+  padding: 64px 60px;
+  background-color: var(--color-white);
+}
+
+.valores__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.valores__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 10px;
+}
+
+.valores__title span {
+  color: var(--color-red);
+}
+
+.valores__subtitle {
+  font-size: 14px;
+  color: var(--color-gray-text);
+}
+
+.valores__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.valor-card {
+  border: 1px solid var(--color-gray-border);
+  border-radius: var(--radius-lg);
+  padding: 28px 22px;
+  text-align: center;
+  background-color: var(--color-gray-bg);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.valor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--color-red);
+}
+
+.valor-card__icon {
+  width: 52px;
+  height: 52px;
+  background-color: var(--color-black);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: var(--color-white);
+  transition: background-color var(--transition);
+}
+
+.valor-card:hover .valor-card__icon {
+  background-color: var(--color-red);
+}
+
+.valor-card__name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+
+.valor-card__desc {
+  font-size: 13px;
+  color: var(--color-gray-text);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   HISTORIA
+   ============================================================ */
+.historia {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  padding: 64px 60px;
+  background-color: var(--color-black);
+}
+
+.historia__intro {
+  flex: 1;
+}
+
+.historia__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.historia__title span {
+  color: var(--color-red);
+}
+
+.historia__text {
+  font-size: 14px;
+  color: #bbbbbb;
+  line-height: 1.9;
+}
+
+/* Timeline */
+.historia__timeline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.timeline-item__dot {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: 0.5px;
+}
+
+.timeline-item__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 4px;
+}
+
+.timeline-item__desc {
+  font-size: 13px;
+  color: #aaaaaa;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   RESPONSIVE — Tablet (max 900px)
+   ============================================================ */
+@media (max-width: 900px) {
+  .hero {
+    padding: 60px 30px;
+  }
+
+  .hero__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+  }
+
+  .mv {
+    grid-template-columns: 1fr;
+    padding: 48px 30px;
+  }
+
+  .valores {
+    padding: 48px 30px;
+  }
+
+  .valores__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .historia {
+    flex-direction: column;
+    padding: 48px 30px;
+    gap: 40px;
+  }
+
+  .counters {
+    grid-template-columns: 1fr;
+  }
+
+  .counters__item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .counters__item:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — Móvil (max 600px)
+   ============================================================ */
+@media (max-width: 600px) {
+  .hero {
+    padding: 48px 20px;
+    min-height: auto;
+  }
+
+  .hero__title {
+    font-size: 26px;
+  }
+
+  .hero__badge {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .valores__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .valores,
+  .mv,
+  .historia {
+    padding: 40px 20px;
+  }
+}
