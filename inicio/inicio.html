@@ -8,11 +8,293 @@
 </head>
 <body>
     <header>
-        <h1>Ferro Hogar tu ferreteria de confianza</h1>
-        <form>
-            <input type="search" class="busqueda" placeholder="Buscar productos, marcas y más...">
-            <img src="/inicio/iconos/lupa.png" alt="lupa del buscador">
-        </form>
+        <!-- Barra superior -->
+        <div class="barra-superior">
+            <div class="info-contacto">
+                <span>📍 Los Olivos, Lima - Perú</span>
+                <span>📞 +51 987 654 321</span>
+                <span>✉️ ventas@ferrohogar.com</span>
+            </div>
+            <div class="info-derecha">
+                <a href="#">Nosotros</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+                <a href="#">f</a>
+                <a href="#">ig</a>
+                <a href="#">tk</a>
+            </div>
+        </div>
+
+        <!-- Barra del logo -->
+        <div class="barra-logo">
+            <div class="logo">
+                <img src="/inicio/imagenes/logo.png" alt="Logo FerroHogar">
+                <div>
+                    <p class="nombre-logo">FERRO<span>HOGAR</span></>
+                    <p class="slogan-logo">TU FERRETERÍA DE CONFIANZA</p>
+                </div>
+            </div>
+
+            <div class="barra-busqueda">
+                <input type="search" placeholder="Buscar productos, marcas y más...">
+                <select>
+                    <option>Todas las categorías</option>
+                    <option>Herramientas</option>
+                    <option>Pinturas</option>
+                    <option>Gasfitería</option>
+                </select>
+                <button>🔍</button>
+            </div>
+
+            <div class="acciones-header">
+                <a href="#">
+                    <span>👤</spa>
+                    <div>
+                        <p>Mi cuenta</>
+                        <p>Iniciar sesión</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <span>🛒 0</span>
+                    <p>S/ 0.00</p>
+                </a>
+                <a href="#" class="whatsapp-btn">💬</a>
+            </div>
+        </div>
+
+        <!-- Barra de navegación -->
+        <div class="barra-nav">
+        <nav>
+            <ul>
+                <li class="activo"><a href="#">INICIO</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">PRODUCTOS ▾</a></li>
+                <li><a href="#">CATEGORÍAS ▾</a></li>
+                <li><a href="#">SOLUCIONES</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-cotizar">📄 COTIZAR AHORA</a>
+        </div>
     </header>
+    
+    <main>
+        <section class="seccion1">
+            <div>
+                <h2>Ferro<span>Hogar</span> <br>todo para construir <br>y renovar</h2>
+                <p>Herramientas, materiales y soluciones para profesionales y hogares.</p>
+                <button>Ver productos -></button>
+                <button>Contactar</button>
+            </div>
+            <img src="/inicio/imagenes/imagenprincipal.png" alt="imagen principal">
+        </section>
+
+        <section class="seccion2">
+            <div class="categorias">
+                <h2>Categorias <span>DESTACADAS</span></h2>
+                <div class="caja1">
+                    <img src="/inicio/iconos/herramienta.png" alt="herramienta icono">
+                    <p>Herramientas Eléctricas</p>
+                </div>
+                <div class="caja2">
+                    <img src="/inicio/iconos/construccion.png" alt="materiales de construccion">
+                    <p>Materiales de Construcción</p>
+                </div>
+                <div class="caja3">
+                    <img src="/inicio/iconos/pinturas.png" alt="pinturas icono">
+                    <p>Pinturas</p>
+                </div>
+                <div class="caja4">
+                    <img src="/inicio/iconos/seguridad.png" alt="seguridad icono">
+                    <p>Seguridad Industrial</p>
+                </div>
+                <div class="caja5">
+                    <img src="/inicio/iconos/gasfiteria.png" alt="gasfiteria icono">
+                    <p>Gasfitería</p>
+                </div>
+                <div class="caja6">
+                    <img src="/inicio/iconos/electricidad.png" alt="electricidad icono">
+                    <p>Electricidad</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion3">
+            <div>
+                <h2>Ofertas<span>Destacadas</span></h2>
+                <a href="#">Ver todas la ofertas -></a>
+            </div>
+            <div class="cuadricula">
+
+                <!-- Cuadricula 1 -->
+                <div class="tarjeta-producto">
+                    <span class="descuento">-15%</span>
+                    <div class="imagen-producto">
+                        <img src="/inicio/imagenes/taladro.png" alt="Taladro Bosch">
+                    </div>
+                    <div class="info-producto">
+                        <p class="marca">Bosh Professional</p>
+                        <p class="nombre">Taladro percutor GSB 550W</p>
+                        <div class="fila-precio">
+                            <span class="precio">S/219.00</span>
+                            <span class="precio-anterior">S/258.00</span>
+                        </div>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Cuadricula 2 -->
+                <div class="tarjeta-producto">
+                    <span class="descuento">-20%</span>
+                    <div class="imagen-producto">
+                        <img src="/inicio/imagenes/amoladora.jpg" alt="Amoladora Stanley">
+                    </div>
+                    <div class="info-producto">
+                        <p class="marca">Stanley</p>
+                        <p class="nombre">Amoladora angular 155mm</p>
+                        <div class="fila-precio">
+                            <span class="precio">S/159.00</span>
+                            <span class="precio-anterior">S/199.00</span>
+                        </div>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Cuadricula 3 -->
+                <div class="tarjeta-producto">
+                    <span class="descuento">-10%</span>
+                    <div class="imagen-producto">
+                        <img src="/inicio/imagenes/pintura_latex.png" alt="Pintura Inca">
+                    </div>
+                    <div class="info-producto">
+                        <p class="marca">Inca</p>
+                        <p class="nombre">Pintura látex interior mate 20L</p>
+                        <div class="fila-precio">
+                            <span class="precio">S/89.00</span>
+                            <span class="precio-anterior">S/99.00</span>
+                        </div>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Cuadricula 4 -->
+                <div class="tarjeta-producto">
+                    <span class="descuento">-25%</span>
+                    <div class="imagen-producto">
+                        <img src="/inicio/imagenes/cemento-yura.png" alt="Cemento Yura">
+                    </div>
+                    <div class="info-producto">
+                        <p class="marca">Yura</p>
+                        <p class="nombre">Cemento tipo IP bolsa 42.5kg</p>
+                        <div class="fila-precio">
+                            <span class="precio">S/26.00</span>
+                            <span class="precio-anterior">S/32.00</span>
+                        </div>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion4">
+            <h2>¿POR QUÉ <span>ELEGIR</span> FERROHOGAR?</h2>
+
+            <div class="cuadricula-razones">
+                <div class="tarjeta-razon">
+                    <img src="/inicio/iconos/calidad-garantizada.png" alt="calidad garantizada">
+                    <h3>Calidad garantizada</h3>
+                    <p>Trabajamos con las mejores marcas del mercado</p>
+                </div>
+
+                <div class="tarjeta-razon">
+                    <img src="/inicio/iconos/delivery.png" alt="Delivery">
+                    <h3>Delivery rápido</h3>
+                    <p>Entregamos en todo Lima Norte el mismo día</p>
+                </div>
+
+                <div class="tarjeta-razon">
+                    <img src="/inicio/iconos/precio.png" alt="mejor precio">
+                    <h3>Mejor precio</h3>
+                    <p>Precios competitivos y ofertas permanentes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion5">
+            <h2>MARCAS <span>DESTACADAS</span></h2>
+
+            <div class="cuadricula-marcas">
+                <div class="tarjeta-marca">Bosch</div>
+                <div class="tarjeta-marca">Stanley</div>
+                <div class="tarjeta-marca">Yura</div>
+                <div class="tarjeta-marca">Inca</div>
+                <div class="tarjeta-marca">3M</div>
+                <div class="tarjeta-marca">Makita</div>
+                <div class="tarjeta-marca">Eternit</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="cuadricula-footer">
+
+            <!-- Columna 1 -->
+            <div class="columna-footer">
+                <p class="logo-footer"><span>FERRO</span>HOGAR</p>
+                <p>Tu ferretería de confiaza en Los Olivos. Materiales, herramientas y soluciones para tu hogar y obra.</p>
+                <div class="redes-sociales">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="columna-footer">
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="#">Herramientas eléctricas</a></li>
+                    <li><a href="#">Materiales</a></li>
+                    <li><a href="#">Pinturas</a></li>
+                    <li><a href="#">Gasfiterias</a></li>
+                    <li><a href="#">Electricidad</a></li>
+                    <li><a href="#">Seguridad Industrial</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="columna-footer">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4 -->
+            <div class="columna-footer">
+                <h4>Contacto</h4>
+                <ul class="lista-contacto">
+                    <li>📍 Los olivos, Lima Norte, Perú</li>
+                    <li>📱 +51 999 999 999</li>
+                    <li>📧 ferrohogar@ventas.com</li>
+                    <li>🕛 Lun-Sáb 8am - 7pm</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pie-footer">
+            <p>@2026 Ferro Hogar. Todos los derechos reservados.</p>
+            <div class="metodos-pago">
+                <span>Efectivo</span>
+                <span>Yape</span>
+                <span>VISA</span>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
