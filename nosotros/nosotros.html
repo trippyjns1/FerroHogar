@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nosotros – FerroHogar</title>
-  <link rel="stylesheet" href="nosotros.css" />
+  <link rel="stylesheet" href="../compartido/compartido.css">
+  <link rel="stylesheet" href="/nosotros/nosotros.css" />
+  <title>Nosotros - FerroHogar</title>
+  
 </head>
 <body>
   <header>
@@ -85,12 +87,12 @@
 
         <nav>
             <ul>
-                <li><a href="#">INICIO</a></li>
+                <li><a href="/inicio/inicio.html">INICIO</a></li>
                 <li class="activo"><a href="#">NOSOTROS</a></li>
                 <li><a href="#">PRODUCTOS ▾</a></li>
                 <li><a href="#">CATEGORÍAS ▾</a></li>
                 <li><a href="#">SOLUCIONES</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="/contacto/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
 
@@ -100,12 +102,17 @@
 
     </div>
 </header>
+<main>
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-texto">
       <span class="etiqueta">Quiénes somos</span>
       <h1>Tu ferretería de <span>confianza</span> desde 1955</h1>
       <p>Somos una ferretería local comprometida con brindarte los mejores materiales de construcción, herramientas y soluciones para el hogar, con atención personalizada.</p>
+    </div>
+    <div class="hero-imagen">
+      <img src="/nosotros/imagenes/image.png" alt="FerroHogar">
     </div>
     <div class="hero-badge">
       <strong id="anos">71</strong>
@@ -116,15 +123,15 @@
   <!-- CONTADORES -->
   <section class="contadores">
     <div>
-      <strong id="clientes">100.00</strong>
+      <strong id="clientes">0</strong>
       <span>Clientes satisfechos</span>
     </div>
     <div>
-      <strong id="productos">5.000</strong>
+      <strong id="productos">0</strong>
       <span>Productos disponibles</span>
     </div>
     <div>
-      <strong id="trabajadores">5</strong>
+      <strong id="trabajadores">0</strong>
       <span>Trabajadores comprometidos</span>
     </div>
   </section>
@@ -146,12 +153,36 @@
     <h2>Nuestros <span>valores</span></h2>
     <p class="subtitulo">Los principios que guían cada decisión en FerroHogar</p>
     <div class="valores-grid">
-      <div class="valor">🛡️<h3>Confianza</h3><p>Actuamos con transparencia y honestidad en cada trato.</p></div>
-      <div class="valor">⭐<h3>Calidad</h3><p>Productos certificados con los más altos estándares.</p></div>
-      <div class="valor">👥<h3>Servicio</h3><p>La satisfacción del cliente es nuestra prioridad.</p></div>
-      <div class="valor">💡<h3>Innovación</h3><p>Mejoramos constantemente nuestros procesos y catálogo.</p></div>
-      <div class="valor">⏰<h3>Puntualidad</h3><p>Respetamos los tiempos de entrega y compromisos.</p></div>
-      <div class="valor">❤️<h3>Compromiso</h3><p>Comprometidos con nuestra comunidad en Lima Norte.</p></div>
+      <div class="valor">
+        <span>🛡️</span>
+        <h3>Confianza</h3>
+        <p>Actuamos con transparencia y honestidad en cada trato.</p>
+      </div>
+      <div class="valor">
+        <span>⭐</span>
+        <h3>Calidad</h3>
+        <p>Productos certificados con los más altos estándares.</p>
+      </div>
+      <div class="valor">
+        <span>👥</span>
+        <h3>Servicio</h3>
+        <p>La satisfacción del cliente es nuestra prioridad.</p>
+      </div>
+      <div class="valor">
+        <span>💡</span>
+        <h3>Innovación</h3>
+        <p>Mejoramos constantemente nuestros procesos y catálogo.</p>
+      </div>
+      <div class="valor">
+        <span>⏰</span>
+        <h3>Puntualidad</h3>
+        <p>Respetamos los tiempos de entrega y compromisos.</p>
+      </div>
+      <div class="valor">
+        <span>❤️</span>
+        <h3>Compromiso</h3>
+        <p>Comprometidos con nuestra comunidad en Lima Norte.</p>
+      </div>
     </div>
   </section>
 
@@ -162,12 +193,99 @@
       <p>FerroHogar nació para ser el aliado más confiable de las familias y profesionales de Lima Norte. Desde nuestra apertura, crecemos junto a nuestra comunidad ampliando nuestro catálogo y mejorando la experiencia de cada visita.</p>
     </div>
     <div class="timeline">
-      <div class="item"><div class="punto">1955</div><div><h3>Fundación</h3><p>Apertura del primer local en Los Olivos con herramientas y materiales básicos.</p></div></div>
-      <div class="item"><div class="punto">1980</div><div><h3>Expansión</h3><p>Ampliamos el local sumando gasfitería, electricidad y pinturas.</p></div></div>
-      <div class="item"><div class="punto">2010</div><div><h3>Modernización</h3><p>Incorporamos marcas como Bosch y Stanley, consolidando nuestra reputación.</p></div></div>
-      <div class="item"><div class="punto">2022</div><div><h3>Era digital</h3><p>Lanzamiento de tienda online y ventas por WhatsApp para toda Lima.</p></div></div>
+      <div class="item">
+        <div class="punto">1955</div>
+        <div>
+          <h3>Fundación</h3>
+          <p>Apertura del primer local en Los Olivos con herramientas y materiales básicos.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="punto">1980</div>
+        <div>
+          <h3>Expansión</h3>
+          <p>Ampliamos el local sumando gasfitería, electricidad y pinturas.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="punto">2010</div>
+        <div>
+          <h3>Modernización</h3>
+          <p>Incorporamos marcas como Bosch y Stanley, consolidando nuestra reputación.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="punto">2022</div>
+        <div>
+          <h3>Era digital</h3>
+          <p>Lanzamiento de tienda online y ventas por WhatsApp para toda Lima.</p>
+        </div>
+      </div>
     </div>
   </section>
+
+</main>
+<footer>
+        <div class="cuadricula-footer">
+
+            <!-- Columna 1 -->
+            <div class="columna-footer">
+                <p class="logo-footer"><span>FERRO</span>HOGAR</p>
+                <p>Tu ferretería de confiaza en Los Olivos. Materiales, herramientas y soluciones para tu hogar y obra.</p>
+                <div class="redes-sociales">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="columna-footer">
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="#">Herramientas eléctricas</a></li>
+                    <li><a href="#">Materiales</a></li>
+                    <li><a href="#">Pinturas</a></li>
+                    <li><a href="#">Gasfiterias</a></li>
+                    <li><a href="#">Electricidad</a></li>
+                    <li><a href="#">Seguridad Industrial</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="columna-footer">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4 -->
+            <div class="columna-footer">
+                <h4>Contacto</h4>
+                <ul class="lista-contacto">
+                    <li>📍 Los olivos, Lima Norte, Perú</li>
+                    <li>📱 +51 999 999 999</li>
+                    <li>📧 ferrohogar@ventas.com</li>
+                    <li>🕛 Lun-Sáb 8am - 7pm</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pie-footer">
+            <p>@2026 Ferro Hogar. Todos los derechos reservados.</p>
+            <div class="metodos-pago">
+                <span>Efectivo</span>
+                <span>Yape</span>
+                <span>VISA</span>
+            </div>
+        </div>
+    </footer>
 
   <script src="nosotros.js"></script>
 </body>

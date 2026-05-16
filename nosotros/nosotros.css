@@ -1,452 +1,340 @@
-/* ============================================================
-   nosotros.css — FerroHogar | Sección Nosotros
-   Colores: Rojo #D32F2F | Negro #1a1a1a | Blanco #ffffff
-   ============================================================ */
 
-/* ---------- RESET & BASE ---------- */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --color-red:      #D32F2F;
-  --color-red-dark: #b71c1c;
-  --color-black:    #1a1a1a;
-  --color-white:    #ffffff;
-  --color-gray-bg:  #f5f5f5;
-  --color-gray-text:#666666;
-  --color-gray-border: #e0e0e0;
-
-  --font-main: 'Segoe UI', Arial, sans-serif;
-
-  --radius-sm:  6px;
-  --radius-md:  10px;
-  --radius-lg:  14px;
-  --radius-full: 50%;
-
-  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
-
-  --transition: 0.3s ease;
-}
-
-body {
-  font-family: var(--font-main);
-  color: var(--color-black);
-  background: var(--color-white);
-  line-height: 1.7;
-}
-
-/* ============================================================
-   HERO — Quiénes somos
-   ============================================================ */
+/* Hero */
 .hero {
-  position: relative;
-  min-height: 420px;
-  display: flex;
-  align-items: center;
-  padding: 80px 60px;
-  overflow: hidden;
+    background-color: #1a2c4e;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    color: #fff;
 }
 
-/* Imagen de fondo con overlay oscuro */
-.hero__overlay {
-  position: absolute;
-  inset: 0;
-  background-image: url('imagenes/ban_nos.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: brightness(0.35);
-  z-index: 0;
+.hero-texto {
+    flex: 1;
+    min-width: 0;
 }
 
-/* Contenido encima del overlay */
-.hero__content {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 48px;
+.etiqueta {
+    background: #e63329;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
-.hero__text {
-  flex: 1;
+.hero-texto h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
-.hero__label {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--color-red);
-  margin-bottom: 14px;
+.hero-texto h1 span {
+    color: #e63329;
 }
 
-.hero__title {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.15;
-  color: var(--color-white);
-  margin-bottom: 18px;
+.hero-texto p {
+    font-size: 15px;
+    opacity: 0.85;
+    line-height: 1.7;
+    max-width: 450px;
 }
 
-.hero__title span {
-  color: var(--color-red);
+.hero-imagen {
+    flex-shrink: 0;
 }
 
-.hero__desc {
-  font-size: 15px;
-  color: #cccccc;
-  line-height: 1.8;
-  max-width: 500px;
+.hero-imagen img {
+    width: 300px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-/* Badge contador años */
-.hero__badge {
-  flex-shrink: 0;
-  min-width: 160px;
-  background-color: var(--color-red);
-  border-radius: var(--radius-lg);
-  padding: 32px 36px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.hero__badge-num {
-  font-size: 58px;
-  font-weight: 700;
-  color: var(--color-white);
-  line-height: 1;
-}
-
-.hero__badge-label {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.4;
-}
-
-/* ============================================================
-   CONTADORES
-   ============================================================ */
-.counters {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: var(--color-red);
-}
-
-.counters__item {
-  padding: 30px 20px;
-  text-align: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.counters__item:last-child {
-  border-right: none;
-}
-
-.counters__num {
-  font-size: 38px;
-  font-weight: 700;
-  color: var(--color-white);
-}
-
-.counters__label {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-/* ============================================================
-   MISIÓN Y VISIÓN
-   ============================================================ */
-.mv {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  padding: 64px 60px;
-  background-color: var(--color-gray-bg);
-}
-
-.mv__card {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-gray-border);
-  border-radius: var(--radius-lg);
-  padding: 32px;
-  box-shadow: var(--shadow-card);
-  transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.mv__card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.mv__icon {
-  width: 44px;
-  height: 44px;
-  background-color: var(--color-red);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
-  color: var(--color-white);
-}
-
-.mv__title {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--color-black);
-  margin-bottom: 12px;
-}
-
-.mv__text {
-  font-size: 14px;
-  color: var(--color-gray-text);
-  line-height: 1.8;
-}
-
-/* ============================================================
-   VALORES
-   ============================================================ */
-.valores {
-  padding: 64px 60px;
-  background-color: var(--color-white);
-}
-
-.valores__header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.valores__title {
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--color-black);
-  margin-bottom: 10px;
-}
-
-.valores__title span {
-  color: var(--color-red);
-}
-
-.valores__subtitle {
-  font-size: 14px;
-  color: var(--color-gray-text);
-}
-
-.valores__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.valor-card {
-  border: 1px solid var(--color-gray-border);
-  border-radius: var(--radius-lg);
-  padding: 28px 22px;
-  text-align: center;
-  background-color: var(--color-gray-bg);
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
-}
-
-.valor-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card);
-  border-color: var(--color-red);
-}
-
-.valor-card__icon {
-  width: 52px;
-  height: 52px;
-  background-color: var(--color-black);
-  border-radius: var(--radius-full);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 16px;
-  color: var(--color-white);
-  transition: background-color var(--transition);
-}
-
-.valor-card:hover .valor-card__icon {
-  background-color: var(--color-red);
-}
-
-.valor-card__name {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--color-black);
-  margin-bottom: 8px;
-}
-
-.valor-card__desc {
-  font-size: 13px;
-  color: var(--color-gray-text);
-  line-height: 1.6;
-}
-
-/* ============================================================
-   HISTORIA
-   ============================================================ */
-.historia {
-  display: flex;
-  gap: 60px;
-  align-items: flex-start;
-  padding: 64px 60px;
-  background-color: var(--color-black);
-}
-
-.historia__intro {
-  flex: 1;
-}
-
-.historia__title {
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: 18px;
-  line-height: 1.2;
-}
-
-.historia__title span {
-  color: var(--color-red);
-}
-
-.historia__text {
-  font-size: 14px;
-  color: #bbbbbb;
-  line-height: 1.9;
-}
-
-/* Timeline */
-.historia__timeline {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-
-.timeline-item {
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
-}
-
-.timeline-item__dot {
-  flex-shrink: 0;
-  width: 52px;
-  height: 52px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-red);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--color-white);
-  letter-spacing: 0.5px;
-}
-
-.timeline-item__title {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--color-white);
-  margin-bottom: 4px;
-}
-
-.timeline-item__desc {
-  font-size: 13px;
-  color: #aaaaaa;
-  line-height: 1.6;
-}
-
-/* ============================================================
-   RESPONSIVE — Tablet (max 900px)
-   ============================================================ */
-@media (max-width: 900px) {
-  .hero {
-    padding: 60px 30px;
-  }
-
-  .hero__content {
+.hero-badge {
+    background: #e63329;
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    flex-shrink: 0;
+    color: #fff;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-  }
+    align-items: center;
+    gap: 8px;
+    min-width: 140px;
+}
 
-  .hero__title {
-    font-size: 32px;
-  }
+.hero-badge strong {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1;
+}
 
-  .mv {
-    grid-template-columns: 1fr;
-    padding: 48px 30px;
-  }
+.hero-badge span {
+    font-size: 13px;
+    opacity: 0.9;
+}
 
-  .valores {
-    padding: 48px 30px;
-  }
+/* Contadores*/
+.contadores {
+    background: #e63329;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
-  .valores__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .historia {
+.contadores div {
+    padding: 2rem;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
     flex-direction: column;
-    padding: 48px 30px;
-    gap: 40px;
-  }
+    gap: 6px;
+    align-items: center;
+}
 
-  .counters {
-    grid-template-columns: 1fr;
-  }
-
-  .counters__item {
+.contadores div:last-child {
     border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .counters__item:last-child {
-    border-bottom: none;
-  }
 }
 
-/* ============================================================
-   RESPONSIVE — Móvil (max 600px)
-   ============================================================ */
-@media (max-width: 600px) {
-  .hero {
-    padding: 48px 20px;
-    min-height: auto;
-  }
+.contadores div strong {
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+}
 
-  .hero__title {
+.contadores div span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Mision y Vision */
+.mv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 3rem 2rem;
+    background: #f5f5f5;
+}
+
+.mv-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-top: 4px solid #e63329;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s;
+}
+
+.mv-card:hover {
+    transform: translateY(-4px);
+}
+
+.mv-card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 1rem;
+}
+
+.mv-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Valores */
+.valores {
+    padding: 3rem 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.valores h2 {
     font-size: 26px;
-  }
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 8px;
+}
 
-  .hero__badge {
-    width: 100%;
-    padding: 24px;
-  }
+.valores h2 span {
+    color: #e63329;
+}
 
-  .valores__grid {
-    grid-template-columns: 1fr;
-  }
+.subtitulo {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 2rem;
+}
 
-  .valores,
-  .mv,
-  .historia {
-    padding: 40px 20px;
-  }
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.valor {
+    background: #f5f5f5;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.valor:hover {
+    transform: translateY(-4px);
+    border-color: #e63329;
+}
+
+.valor span {
+    font-size: 32px;
+}
+
+.valor h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2c4e;
+}
+
+.valor p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Historia */
+.historia {
+    background: #1a1a1a;
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.historia-intro {
+    flex: 1;
+}
+
+.historia-intro h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.historia-intro h2 span {
+    color: #e63329;
+}
+
+.historia-intro p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+/* Timelime */
+.timeline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.item {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+
+.punto {
+    background: #e63329;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.item div:last-child h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.item div:last-child p {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-imagen img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .mv {
+        grid-template-columns: 1fr;
+    }
+
+    .valores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .historia {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contadores {
+        grid-template-columns: 1fr;
+    }
+
+    .contadores div {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .barra-busqueda {
+        display: none;
+    }
+
+    .info-contacto {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-texto h1 {
+        font-size: 26px;
+    }
 }
