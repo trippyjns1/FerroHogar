@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Seccion principal */
+.seccion-principal {
+    padding: 3rem 2rem;
+    background: #f5f5f5;
+}
+
+.seccion-principal h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a2c4e;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Cuadricula */
+.cuadricula-principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Tarjeta */
+.cuadro {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cuadro:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+/* Imagen */
+.imagen {
+    width: 100%;
+    height: 180px;
+    background: #f9fafb;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Info */
+.producto-info {
+    padding: 14px;
+}
+
+.kit {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 4px;
+}
+
+.info-kit {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.precio-fila {
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: 700;
+    color: #6e3329;
+}
+
+.producto-info button {
+    width: 100%;
+    padding: 11px 0;
+    background: linear-gradient(135deg, #1a2c4e, #e63329);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(230, 51, 41, 0.3);
+    transition: all 0.3s ease;
+}
+
+.producto-info button:hover {
+    background: linear-gradient(135deg, #e63329, #1a2c4e);
+    box-shadow: 0 6px 20px rgba(230, 51, 41, 0.5);
+    transform: translateY(-2px);
+}
+
+.producto-info button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cuadricula-principal {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .cuadricula-principal {
+        grid-template-columns: 1fr;
+    }
+}

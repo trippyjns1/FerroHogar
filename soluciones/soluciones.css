@@ -1,0 +1,334 @@
+/* Hero Solucione */
+.hero-soluciones {
+    background-color: #1a2c4e;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-soluciones-texto h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-soluciones-texto h1 span {
+    color: #e63329;
+}
+
+.hero-soluciones-texto p {
+    font-size: 15px;
+    opacity: 0.85;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.etiqueta {
+    background: #e63329;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+
+/* Por cliente */
+.por-cliente {
+    padding: 3rem 2rem;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.por-cliente h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 8px;
+}
+
+.por-cliente h2 span {
+    color: #e63329;
+}
+
+.cuadricula-clientes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 2rem auto 0;
+}
+
+.tarjeta-cliente {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.tarjeta-cliente:hover {
+    transform: translateY(-4px);
+    border-color: #e63329;
+}
+
+.tarjeta-cliente span {
+    font-size: 36px;
+}
+
+.tarjeta-cliente  h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2c4e;
+}
+
+.tarjeta-cliente p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* Por proyecto */
+.por-proyecto {
+    padding: 3rem 2rem;
+    background: #fff;
+    text-align: center;
+
+}
+.por-proyecto h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 8px;
+}
+
+.por-proyecto h2 span {
+    color: #e63329;
+}
+
+.cuadricula-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 2.5rem auto 0;
+}
+
+.tarjeta-proyecto {
+    background: #f5f5f5;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-4px);
+    border-color: #e63329;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.tarjeta-proyecto span {
+    font-size: 40px;
+}
+
+.tarjeta-proyecto h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2c4e;
+}
+
+.tarjeta-proyecto p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Como funciona */
+.como-funciona {
+    padding: 3rem 2rem;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.como-funciona h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 8px;
+}
+
+.como-funciona h2 span {
+    color: #e63329;
+}
+
+.pasos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 2rem auto 0;
+    flex-wrap: wrap;
+}
+
+.paso {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    max-width: 220px;
+    transition: transform 0.2s;
+}
+
+.paso:hover {
+    transform: translateY(-4px);
+}
+
+.paso-numero {
+    width: 48px;
+    height: 48px;
+    background: #e63329;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.paso h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 6px;
+}
+
+.paso p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.flecha {
+    font-size: 24px;
+    color: #e63329;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Banner contacto */
+.banner-contacto {
+    background: #1a2c4e;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-contacto h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.banner-contacto p {
+    font-size: 15px;
+    opacity: 0.85;
+    margin-bottom: 2rem;
+}
+
+.banner-botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-primario {
+    padding: 12px 28px;
+    background: #e63329;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(230, 51, 41, 0.4);
+}
+
+.btn-primario:hover {
+    background: #c62a20;
+    transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+    padding: 12px 28px;
+    background: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:hover {
+    background: #1db954;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cuadricula-clientes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cuadricula-proyectos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flecha {
+        display: none;
+    }
+
+    .pasos {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cuadricula-clientes {
+        grid-template-columns: 1fr;
+    }
+
+    .cuadricula-proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-soluciones-texto h1 {
+        font-size: 26px;
+    }
+}

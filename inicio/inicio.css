@@ -208,17 +208,29 @@
 
 .info-producto button {
     width: 100%;
-    padding: 8px 0;
-    background: #1a2c4e;
+    padding: 11px 0;
+    background: linear-gradient(135deg, #1a2c4e, #e63329);
     color: #fff;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 13px;
+    font-weight: 600;
     cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(230, 51, 41, 0.3);
+    transition: all 0.3s ease;
 }
 
 .info-producto button:hover {
-    background: #e63329;
+    background: linear-gradient(135deg, #e63329, #1a2c4e);
+    box-shadow: 0 6px 20px rgba(230, 51, 41, 0.5);
+    transform: translateY(-2px);
+}
+
+.info-producto button:active {
+    transform: translateY(0);
+    box-shadow: none;
 }
 
 
@@ -304,4 +316,10 @@
 .tarjeta-marca:hover {
     border-color: #e63329;
     color: #e63329;
+}
+
+
+button > a {
+    text-decoration: none;
+    color: #1a1a1a;
 }

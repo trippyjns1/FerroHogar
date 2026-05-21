@@ -155,6 +155,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .barra-nav nav ul {
@@ -162,39 +163,74 @@
     display: flex;
 }
 
+.barra-nav nav ul li {
+    position: relative;
+}
+
 .barra-nav nav ul li a {
     display: block;
-    padding: 14px 18px;
-    color: #fff;
+    padding: 16px 20px;
+    color: #ccd6f6;
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
 }
 
 .barra-nav nav ul li a:hover {
-    background: #e63329;
+    color: #fff;
+    background: transparent;
 }
 
+/* Linea roja abajo al hacer hover */
+.barra-nav nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #e63329;
+    transition: width 0.3s ease;
+}
+
+.barra-nav nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Activo */
 .barra-nav nav ul li.activo a {
-    background: #e63329;
+    color: #fff;
+    background: transparent;
 }
 
+.barra-nav nav ul li.activo a::after {
+    width: 100%;
+}
+
+/* Boton cotizar */
 .btn-cotizar {
     background: #e63329;
     color: #fff !important;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 10px 22px;
     font-size: 13px;
     font-weight: 600;
     display: flex;
     align-items: center;
     gap: 8px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(230, 51, 41, 0.4);
+    transition: all 0.2s ease;
 }
 
 .btn-cotizar:hover {
     background: #c62a20;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(230, 51, 41, 0.5);
 }
-
 /* ===== FOOTER ===== */
 footer {
     background: #111827;
