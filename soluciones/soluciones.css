@@ -300,8 +300,11 @@
     transform: translateY(-2px);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
+    .hero-soluciones-texto h1 {
+        font-size: 26px;
+    }
+
     .cuadricula-clientes {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -315,7 +318,8 @@
     }
 
     .pasos {
-        gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -326,9 +330,5 @@
 
     .cuadricula-proyectos {
         grid-template-columns: 1fr;
-    }
-
-    .hero-soluciones-texto h1 {
-        font-size: 26px;
     }
 }

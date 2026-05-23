@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Barra Superior */
 .barra-superior {
@@ -337,4 +340,88 @@ footer {
     border-radius: 6px;
     padding: 4px 12px;
     font-size: 12px;
+}
+
+@media (max-width: 768px) {
+
+    .barra-superior {
+        flex-direction: column;
+        gap: 6px;
+        padding: 8px 1rem;
+        text-align: center;
+    }
+
+    .info-contacto {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .info-derecha {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .barra-logo {
+        flex-direction: column;
+        padding: 12px 1rem;
+        gap: 10px;
+    }
+
+    .barra-busqueda {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .acciones-header {
+        justify-content: center;
+    }
+
+
+    .barra-nav {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .barra-nav nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .barra-nav nav ul li a {
+        padding: 12px 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .btn-cotizar {
+        width: 100%;
+        justify-content: center;
+        padding: 14px;
+    }
+
+    /* ===== FOOTER ===== */
+    .cuadricula-footer {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .pie-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .barra-superior {
+        display: none;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .nombre-logo {
+        font-size: 18px;
+    }
 }

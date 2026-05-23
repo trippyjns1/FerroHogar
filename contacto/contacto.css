@@ -117,3 +117,13 @@ form button:hover {
     background: #c62a20;
 }
 
+@media (max-width: 768px) {
+    section:last-child {
+        margin: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    section:first-child h2 {
+        font-size: 28px;
+    }
+}

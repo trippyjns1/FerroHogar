@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Seccion principal */
 .seccion-principal {
@@ -86,13 +90,15 @@
 }
 
 .producto-info button {
-    width: 100%;
-    padding: 11px 0;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0;
     background: linear-gradient(135deg, #1a2c4e, #e63329);
     color: #fff;
     border: none;
     border-radius: 8px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
     letter-spacing: 1px;
@@ -110,6 +116,45 @@
 .producto-info button:active {
     transform: translateY(0);
     box-shadow: none;
+}
+
+
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.btn-menos, .btn-mas {
+    width: 30px;
+    height: 30px;
+    background-color: #1a2c4e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.btn-mas:hover, .btn-menos:hover {
+    background: #e63329;
+}
+
+.cantidad {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a2c4e;
+    min-width: 24px;
+    text-align: center;
 }
 
 /* Responsive */

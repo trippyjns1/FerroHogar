@@ -338,3 +338,12 @@
         font-size: 26px;
     }
 }
+@media (max-width: 480px) {
+    .hero-badge {
+        width: 100%;
+    }
+
+    .contadores {
+        grid-template-columns: 1fr;
+    }
+}

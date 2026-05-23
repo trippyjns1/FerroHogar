@@ -323,3 +323,36 @@ button > a {
     text-decoration: none;
     color: #1a1a1a;
 }
+
+@media (max-width: 768px) {
+    .seccion1 {
+        flex-direction: column;
+    }
+
+    .seccion1 img {
+        width: 100%;
+    }
+
+    .categorias {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .cuadricula {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cuadricula-razones {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .cuadricula {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion1 h2 {
+        font-size: 24px;
+    }
+}
