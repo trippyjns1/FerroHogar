@@ -8,7 +8,7 @@ function animarContador(elemento, numeroFinal, duracion) {
 
     let intervalo = setInterval(function() {
         
-        numeroActual += incremento  // ← esto faltaba
+        numeroActual += incremento
 
         if (numeroActual >= numeroFinal) {
             numeroActual = numeroFinal
